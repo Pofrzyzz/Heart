@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heart Hypnosis</title>
+    <!-- Link to Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Lobster&family=Pacifico&family=Dancing+Script&family=Great+Vibes&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            overflow: hidden;  /* Prevent scroll */
+        }
+        #heartCanvas {
+            background-color: transparent;
+            border: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .message {
+            position: absolute;
+            font-size: 3rem;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <!-- Canvas for the heart animation -->
+    <canvas id="heartCanvas"></canvas>
+
+    <!-- Message displayed on top of the animation -->
+    <div class="message">I love you</div>
+
+    <!-- Linking to the JavaScript file -->
+    <script src="{{ url_for('static', filename='heart_animation.js') }}"></script>
+</body>
+</html>
